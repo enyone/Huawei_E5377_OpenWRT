@@ -1,4 +1,4 @@
-Huawei_E5377_OpenWRT
+Huawei E5377 OpenWRT
 ====================
 
 Huawei E5377 OpenWRT usb_modeswitch configuration and cdc_ether
@@ -42,3 +42,21 @@ Then use your eth1 network adapter as a WAN device (mode DHCP) just as it is any
 Automating all this
 --------------------
 
+You MUST do steps above before continuing to this section!
+
+Create a file:
+```
+/etc/usb_modeswitch.d/12d1:1f02
+```
+with content:
+```
+# Huawei E5377 (rev.1.02)
+
+TargetVendor=  0x12d1
+TargetProduct= 0x14dc
+
+MessageContent="55534243123456780000000000000a11062000000000000100000000000000"
+NoDriverLoading=1
+```
+
+Then reboot your OpenWRT device and check that everything starts as expected.
