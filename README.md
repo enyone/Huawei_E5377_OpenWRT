@@ -16,7 +16,7 @@ At /sys/kernel/debug/usb/devices before mode-switch descriptors are:
 Vendor=12d1 ProdID=1f02 Rev= 1.02
 ```
 
-Manual from command line:
+At command line (SSH to OpenWRT):
 ```
 opkg update
 opkg install kmod-usb-net
