@@ -37,7 +37,7 @@ At /sys/kernel/debug/usb/devices after mode-switch descriptors are:
 Vendor=12d1 ProdID=14dc Rev= 1.02
 ```
 
-Then use your eth1 network adapter as a WAN device (mode DHCP) just as it is any other network adapter.
+Then use your eth1 interface as a WAN device (mode DHCP) just as it is any other network adapter.
 
 Automating all this
 --------------------
