@@ -6,7 +6,7 @@ Huawei E5377 OpenWRT usb_modeswitch configuration and cdc_ether
 Manual approach
 --------------------
 
-Connect your device to the OpenWRT box with USB cable. After that you should see in demsg:
+Connect your device to the OpenWRT box with USB cable. After that you should see in dmesg:
 ```
 usb 1-1: new high-speed USB device number xx using ehci-platform
 ```
