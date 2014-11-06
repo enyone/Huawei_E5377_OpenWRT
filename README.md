@@ -19,8 +19,7 @@ Vendor=12d1 ProdID=1f02 Rev= 1.02
 At command line (SSH to OpenWRT):
 ```
 opkg update
-opkg install kmod-usb-net
-opkg install kmod-usb-net-cdc-ether
+opkg install usb-modeswitch usb-modeswitch-data kmod-usb-net kmod-usb-net-cdc-ether
 usb_modeswitch -v 12d1 -p 1f02 -M 55534243123456780000000000000a11062000000000000100000000000000
 ```
 
