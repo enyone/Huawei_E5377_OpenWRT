@@ -3,6 +3,9 @@ Huawei_E5377_OpenWRT
 
 Huawei E5377 OpenWRT usb_modeswitch configuration and cdc_ether
 
+Manual approach
+--------------------
+
 Connect your device to the OpenWRT box with USB cable. After that you should see in demsg:
 ```
 usb 1-1: new high-speed USB device number xx using ehci-platform
@@ -33,3 +36,9 @@ At /sys/kernel/debug/usb/devices after mode-switch descriptors are:
 ```
 Vendor=12d1 ProdID=14dc Rev= 1.02
 ```
+
+Then use your eth1 network adapter as a WAN device (mode DHCP) just as it is any other network adapter.
+
+Automating all this
+--------------------
+
