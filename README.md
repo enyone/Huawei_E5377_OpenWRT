@@ -59,3 +59,17 @@ NoDriverLoading=1
 ```
 
 Then reboot your OpenWRT device and check that everything starts as expected.
+
+It seems that OpenWRT 15.05 uses a file named "/etc/usb-mode.json". In that case, add the following section to it:
+```
+                "12d1:1f02": {
+                        "*": {
+                                "t_vendor": 4817,
+                                "t_product": [ 5339 ],
+                                "mode": "HuaweiNew",
+                                "no_driver": true,
+                                "msg": [  ]
+                        }
+                },
+```
+Also, usb-modeswitch-data didn't see to be available on 15.05, but didn't seem to be necessary.
